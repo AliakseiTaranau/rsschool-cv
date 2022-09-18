@@ -4,7 +4,9 @@
 * __E-mail:__ aleksei.taranov@gmail.com
 * __Telegram:__ Aliaksei_TaranaU
 * [__LinkedIn__](https://www.linkedin.com/in/aliaksei-taranau-34a36722b/)
-***
+
+
+*****
 ## About Myself:
 I am beginner full stack developer searching for first employment.
 
@@ -12,17 +14,21 @@ I have recently completed a full stack developer bootcamp course and am currentl
 
 
 I speak Polish, Russian, Belarusian English. I am extremely motivated and most eager to learn new and improve my existing skills.
-***
+
+
+*****
 ## Skills:
 * HTML5, CSS3
 * JavaScript/React
 * Git, GitHub
 * Python/Django
-***
+
+
+*****
 ## Code Example:
 __Silly story generator from MDN Web Docs:__ The description of the task can be found at this [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator), below is the decision code of this task:
 
-
+```javascript
 function randomValueFromArray(array) {
     const random = Math.floor(Math.random() * array.length);
     return array[random];
@@ -60,7 +66,10 @@ function result() {
     story.textContent = newStory;
     story.style.visibility = 'visible';
 }
-***
+```
+
+
+*****
 ## Academic Qualifications:
 * __Belarusian State Academy of Communications__, Bachelor's degree in operation of telecommunications networks
 * __Codebrainers Sp. z o. o.__, Full Stack Bootcamp course
