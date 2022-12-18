@@ -5,11 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <nav class="navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Myself</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code Example</a></li>
+                <li><a href="#qualy">Academic Qualifications</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="foto">
+                <img src="img/fotoLinkedIn.jpg" alt="Aliaksei Taranau" width="240" height="320">
+            </div>
+            <div class="desc">
+                <h1>Aliaksei Taranau</h1>
+                <p>Junior Front-End Developer</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <aside>
+                <ul class="contacts">
+                    <li>Phone: +48-508-491-627</li>
+                    <li>E-mail: aleksei.taranov@gmail.com</li>
+                    <li>Telegram: Aliaksei_TaranaU</li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </aside>
+            <section id="about" class="aboutMe">
+                <h2>About Myself</h2>
+                <p>I am beginner full stack developer searching for first employment.
 
+                    I have recently completed a full stack developer bootcamp course and am currently looking for a
+                    vacancy
+                    that
+                    would allow me to continue my professional development.
+
+
+                    I speak Polish, Russian, Belarusian English. I am extremely motivated and most eager to learn new
+                    and
+                    improve my existing skills.
+                </p>
+            </section>
+            <section id="skills" class="skill">
+                <h2>Skills</h2>
+                <ul class="skilly">
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript/React</li>
+                    <li>Git, GitHub</li>
+                    <li>Python/Django</li>
+                </ul>
+            </section>
+            <section id="code" class="codeEx">
+                <div class="container">
+                    <h2>Code Example</h2>
+                    <p>Silly story generator from MDN Web Docs: The description of the task can be found at this <a
+                            href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator">link</a>,
+                        below
+                        is the decision code of this task:</p>
+                    <pre>
+                        <code>
+                            function randomValueFromArray(array) {
+                                const random = Math.floor(Math.random() * array.length);
+                                return array[random];
+                            }
+                            
+                            var storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. 
+                            When they got to :inserty:, they stared in horror for a few moments, then :insertz:. 
+                            Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+                            var insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
+                            var insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
+                            var insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+                            
+                            randomize.addEventListener('click', result);
+                            
+                            function result() {
+                                var newStory = storyText;
+                                var xItem = randomValueFromArray(insertX);
+                                var yItem = randomValueFromArray(insertY);
+                                var zItem = randomValueFromArray(insertZ);
+                            
+                                newStory = newStory.replace(':insertx:', xItem);
+                                newStory = newStory.replace(':inserty:', yItem);
+                                newStory = newStory.replace(':insertz:', zItem);
+                            
+                                if (customName.value !== '') {
+                                    const name = customName.value;
+                                    newStory = newStory.replace('Bob', name);
+                                }
+                            
+                                if (document.getElementById("uk").checked) {
+                                    const weight = Math.round(300 / 14) + ' stone';
+                                    const temperature = Math.round((94 - 32) / 1.8) + ' centigrade';
+                                    newStory = newStory.replace('300 pounds', weight);
+                                    newStory = newStory.replace('94 fahrenheit', temperature);
+                                }
+                            
+                                story.textContent = newStory;
+                                story.style.visibility = 'visible';
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section id="qualy" class="education">
+                <h2>Academic Qualifications</h2>
+                <ul class="qualify">
+                    <li>Belarusian State Academy of Communications, Bachelor's degree in operation of telecommunications
+                        networks
+                    </li>
+                    <li>Codebrainers Sp. z o. o., Full Stack Bootcamp course</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="https://rs.school/js/"><img
+                    src="https://themrcrowley.github.io/rsschool-cv/assets/icons/rs_school_js.svg" alt="RSSchool logo"
+                    width="150"></a>
+            <a href="https://github.com/AliakseiTaranau"><img
+                    src="https://themrcrowley.github.io/rsschool-cv/assets/icons/github.svg" alt="Github logo"
+                    width="80"></a>
+            <p>2022</p>
+        </div>
+    </footer>
 </body>
 
 </html>
